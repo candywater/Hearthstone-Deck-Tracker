@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk" InitialTargets="Bootstrap">
+﻿<Project Sdk="Microsoft.NET.Sdk" InitialTargets="Bootstrap">
 
   <!-- This project does not need to be manually run. It is set as a dependency for the main projects and automatically takes care of all bootstrapping that needs to happen -->
 
@@ -16,10 +16,14 @@
     <SlnDirectory>$(MSBuildProjectDirectory)/..</SlnDirectory>
     <HDTDirectory>$(SlnDirectory)/Hearthstone Deck Tracker</HDTDirectory>
 
-    <HearthDbUrl>https://libs.hearthsim.net/hdt/HearthDb.zip</HearthDbUrl>
+	<HearthDbUrl>http://libs.candy.com/hearthsim/hdt/HearthDb.zip</HearthDbUrl>
+	<HearthMirrorUrl>http://libs.candy.com/hearthsim/hdt/HearthMirror.zip</HearthMirrorUrl>
+	<HSReplayUrl>http://libs.candy.com/hearthsim/hdt/HSReplay.dll</HSReplayUrl>
+	<BobsBuddyUrl>http://libs.candy.com/hearthsim/hdt/BobsBuddy.zip</BobsBuddyUrl>
+    <!-- <HearthDbUrl>https://libs.hearthsim.net/hdt/HearthDb.zip</HearthDbUrl>
     <HearthMirrorUrl>https://libs.hearthsim.net/hdt/HearthMirror.zip</HearthMirrorUrl>
     <HSReplayUrl>https://libs.hearthsim.net/hdt/HSReplay.dll</HSReplayUrl>
-    <BobsBuddyUrl>https://libs.hearthsim.net/hdt/BobsBuddy.zip</BobsBuddyUrl>
+    <BobsBuddyUrl>https://libs.hearthsim.net/hdt/BobsBuddy.zip</BobsBuddyUrl> -->
   </PropertyGroup>
 
   <ItemGroup>
